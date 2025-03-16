@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Locator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Locator</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="search-bar" placeholder="Search events...">
+            </div>
+            <div class="col-md-3">
+                <label for="date-filter" class="form-label">Filter by Date:</label>
+                <input type="date" class="form-control" id="date-filter">
+            </div>
+            <div class="col-md-3">
+                <label for="category-filter" class="form-label">Filter by Category:</label>
+                <select class="form-select" id="category-filter">
+                    <option value="all">All Categories</option>
+                    {/* Add categories dynamically using JavaScript */}
+                </select>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <button class="btn btn-primary" id="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
